@@ -1,0 +1,97 @@
+:root {
+  /* Typography */
+  --font-family: "DM Sans", Helvetica;
+
+  /* Font Styles */
+  --headline-font: normal 500 20px/24px var(--font-family);
+  --headline-letter-spacing: -0.2px;
+
+  --caption-bold-font: normal 700 13px/16px var(--font-family);
+  --caption-bold-letter-spacing: 0px;
+
+  --title-1-font: normal 700 32px/40px var(--font-family);
+  --title-1-letter-spacing: -0.96px;
+
+  --body-bold-font: normal 500 16px/24px var(--font-family);
+  --body-bold-letter-spacing: -0.16px;
+
+  --caption-normal-font: normal 400 13px/16px var(--font-family);
+  --caption-normal-letter-spacing: 0px;
+
+  --body-normal-font: normal 400 16px/24px var(--font-family);
+  --body-normal-letter-spacing: -0.16px;
+
+  --title-3-font: normal 700 22px/24px var(--font-family);
+  --title-3-letter-spacing: -0.22px;
+
+  --button-large-font: normal 700 16px/24px var(--font-family);
+  --button-large-letter-spacing: -0.16px;
+
+  --body-link-bold-font: normal 500 16px/20px var(--font-family);
+  --body-link-bold-letter-spacing: -0.16px;
+
+  /* Spacing */
+  --spacing-0: 0px;
+  --spacing-1: 4px;
+  --spacing-2: 8px;
+  --spacing-4: 16px;
+  --spacing-6: 24px;
+  --spacing-8: 40px;
+
+  /* Colors */
+  --black-100: rgba(0, 0, 0, 1);
+  --black-60: rgba(0, 0, 0, 0.6);
+  --black-40: rgba(0, 0, 0, 0.4);
+  --black-10: rgba(0, 0, 0, 0.1);
+  --black-5: rgba(0, 0, 0, 0.05);
+
+  --white-100: rgba(255, 255, 255, 1);
+  --white-60: rgba(255, 255, 255, 0.6);
+  --white-20: rgba(255, 255, 255, 0.2);
+
+  --brand-orange-100: rgba(255, 86, 52, 1);
+  --semantic-red-100: rgba(225, 14, 14, 1);
+
+  /* Consolidated Color Variables */
+  --colors-text-black-100: var(--black-100);
+  --colors-text-white-100: var(--white-100);
+  --colors-text-black-60: var(--black-60);
+  --colors-text-black-40: var(--black-40);
+  --colors-text-black-100-duplicate: var(--black-100);
+
+  --colors-background-black-100: var(--black-100);
+  --colors-background-black-10: var(--black-10);
+  --colors-background-black-5: var(--black-5);
+
+  --colors-background-white-100: var(--white-100);
+  --colors-background-white-60: var(--white-60);
+  --colors-background-white-20: var(--white-20);
+
+  --colors-background-brand-orange-100: var(--brand-orange-100);
+  --colors-background-semantic-red-100: var(--semantic-red-100);
+
+  --colors-border-black-100: var(--black-100);
+  --colors-border-black-10: var(--black-10);
+
+  /* Radii */
+  --radius-round-0: 0px;
+  --radius-round-5: 24px;
+}
+
+/* Dark Mode Theme */
+[data-colors-mode="dark-mode"] {
+  --colors-text-black-40: rgba(238, 238, 238, 0.4);
+  --colors-text-black-100-duplicate: rgba(238, 238, 238, 1);
+  --colors-background-black-5: rgba(221, 221, 221, 0.05);
+}
+
+/* Light Mode Theme */
+[data-colors-mode="light-mode"] {
+  --colors-text-black-40: var(--black-40);
+  --colors-text-black-100-duplicate: var(--black-100);
+  --colors-background-black-5: var(--black-5);
+}
+
+/* Note: To enable a theme, add a data attribute to an HTML element, e.g.:
+   <body data-colors-mode="dark-mode"> <!-- content --> </body>
+   Themes can be applied to any DOM node, not just the `body`. */
